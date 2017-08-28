@@ -198,6 +198,7 @@
     <Content Include="Views\Project\SaveData.cshtml" />
     <Content Include="Views\Technical\SaveData.cshtml" />
     <Content Include="Views\Education\SaveData.cshtml" />
+    <Content Include="Views\Employee\EditEmployee.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

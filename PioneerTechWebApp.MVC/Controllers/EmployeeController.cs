@@ -25,6 +25,11 @@ namespace PioneerTechWebApp.MVC.Controllers
         {
             return View();
         }
+        public ActionResult EditEmployee()
+        {
+            List<Employee> employeeList = employeeDataAccessLayer.ViewEmployeeData();
+            return View(employeeList);
+        }
 
         // POST: Employee/Create
         [HttpPost]
