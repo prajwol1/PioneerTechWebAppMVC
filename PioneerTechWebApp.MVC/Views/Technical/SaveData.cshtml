@@ -12,7 +12,7 @@
     @Html.AntiForgeryToken()
 
     <div class="form-horizontal">
-        <h4>You can save a new employee techninal information or update existing employee details here.</h4>
+        
         If you want to add a completely new employee inforation, please enter data in @Html.ActionLink("Employee Details", "Create", "Employee")  page to continue.
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })

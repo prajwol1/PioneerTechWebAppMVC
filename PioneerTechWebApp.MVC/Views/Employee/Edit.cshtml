@@ -1,11 +1,12 @@
-﻿@model PioneerTechSystem.Models.Employee
-    @model IEnumerable<PioneerTechSystem.Models.Employee>
+﻿
+  
+@model PioneerTechSystem.Models.Employee
 
 @{
     ViewBag.Title = "Update Employee Details";
 }
 
-<h2>Update Employee Details</h2>
+<h2>Edit Employee Details</h2>
 
 
 @using (Html.BeginForm())
@@ -13,8 +14,7 @@
     @Html.AntiForgeryToken()
 
     <div class="form-horizontal">
-        <h4>You can update existing employee information here.</h4>
-        <hr />
+    
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
 
         @Html.HiddenFor(model => model.EmployeeID)
@@ -137,7 +137,7 @@
 }
 
 <div>
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Back", "Index")
 </div>
 
 @section Scripts {

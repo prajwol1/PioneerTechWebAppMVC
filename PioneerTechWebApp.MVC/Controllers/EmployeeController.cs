@@ -15,9 +15,9 @@ namespace PioneerTechWebApp.MVC.Controllers
         public ActionResult Index()
         {
            
-            List<Employee> employeeList = employeeDataAccessLayer.ViewEmployeeData();
+            //List<Employee> employeeList = employeeDataAccessLayer.ViewEmployeeData();
 
-            return View(employeeList);
+            return View();
         }
 
         // GET: Employee/Create
